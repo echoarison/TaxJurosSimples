@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioFx", "ExercicioFx\ExercicioFx.csproj", "{668F8306-144B-428C-8CE7-10581B25647E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{668F8306-144B-428C-8CE7-10581B25647E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{668F8306-144B-428C-8CE7-10581B25647E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{668F8306-144B-428C-8CE7-10581B25647E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{668F8306-144B-428C-8CE7-10581B25647E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E674CF12-698E-419C-85A8-6AE4649BD698}
+	EndGlobalSection
+EndGlobal
