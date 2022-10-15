@@ -17,6 +17,7 @@ namespace ExercicioFx.Entities
             Number = number;
             Date = date;
             TotalValue = totalValue;
+            Installments = new List<Installment>();
 
         }
 

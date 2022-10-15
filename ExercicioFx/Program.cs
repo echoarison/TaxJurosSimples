@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ExercicioFx.Entities;
+using ExercicioFx.Services;
+using System;
 using System.Globalization;
 
 namespace ExercicioFx
@@ -17,6 +19,22 @@ namespace ExercicioFx
             double contractValue = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.Write("Enter number of installments: ");
             int months = int.Parse(Console.ReadLine());
+
+            //instanciando objeto
+            Contract contractClient = new Contract(contractNumber,contractDate,contractValue);
+
+            ContractService contractService = new ContractService(new PaypalService());
+
+            contractService.processContract(contractClient, months);
+
+            //Exibir os Installments
+            Console.WriteLine();
+
+            Console.WriteLine("Installments: ");
+            foreach (Installment installment in contractClient.Installments)
+            {
+                Console.WriteLine(installment);
+            }
         }
     }
 }
