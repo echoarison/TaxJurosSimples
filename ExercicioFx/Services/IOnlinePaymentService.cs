@@ -11,5 +11,6 @@ namespace ExercicioFx.Services
     {
         //A interface só serve para fazer o contrato do "negocio"
         double paymentFree(double amount);  /*Taxa de pagamento do paypal*/
+        double interest(int months, double amount ); /*Taxa do juros simples*/
     }
 }

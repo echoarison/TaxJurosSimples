@@ -7,15 +7,20 @@ namespace ExercicioFx.Entities
         /*Atributos da Classe*/
         public int Number { get; set; }
         public DateTime Date { get; set; }
-        public double TotalValue { get; set; }
+        //public double TotalValue { get; set; }
 
         //Construtor padrao
-        public Contract(int number, DateTime date, double totalValue) {
+        public Contract(int number, DateTime date) {
 
             Number = number;
             Date = date;
-            TotalValue = totalValue;
 
+        }
+
+        //Get do totalValue
+        public double TotalValue 
+        {
+            get { return TotalValue; }
         }
     }
 }
