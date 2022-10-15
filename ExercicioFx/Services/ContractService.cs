@@ -20,7 +20,7 @@ namespace ExercicioFx.Services
             double basicQuota = contract.TotalValue / months;
 
             //fazendo um loop aonde ele calcula os mes dos juros
-            for (int i = 0; i < months; i++)
+            for (int i = 1; i <= months; i++)
             {
                 //fazendo uma variavel local responsavel popr add os meses
                 DateTime addMonth = contract.Date.AddMonths(i);
