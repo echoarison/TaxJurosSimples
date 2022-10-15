@@ -19,10 +19,10 @@ namespace ExercicioFx.Services
 
             /**
              * 
-             * estou somando o valor com a taxa de 2%
+             * estou multiplicando o valor com a taxa de 2%
              * 
              **/
-            return amount + 0.2;
+            return amount * 0.02;
 
         }
 
@@ -33,7 +33,7 @@ namespace ExercicioFx.Services
              * estou retornando o valor somado com 1% vezes o mes em questão
              * 
              **/
-            return (amount + 0.1) * months;
+            return amount * 0.01 * months;
         }
 
     }

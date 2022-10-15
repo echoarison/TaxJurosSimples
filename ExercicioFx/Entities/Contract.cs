@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ExercicioFx.Entities
 {
@@ -7,20 +8,23 @@ namespace ExercicioFx.Entities
         /*Atributos da Classe*/
         public int Number { get; set; }
         public DateTime Date { get; set; }
-        //public double TotalValue { get; set; }
+        public double TotalValue { get; set; }
+        public List<Installment> Installments { get; set; }
 
         //Construtor padrao
-        public Contract(int number, DateTime date) {
+        public Contract(int number, DateTime date, double totalValue) {
 
             Number = number;
             Date = date;
+            TotalValue = totalValue;
 
         }
 
-        //Get do totalValue
-        public double TotalValue 
+        public void AddInstallment(Installment installment)
         {
-            get { return TotalValue; }
+            Installments.Add(installment);
         }
+
+
     }
 }
