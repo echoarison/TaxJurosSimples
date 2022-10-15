@@ -30,6 +30,8 @@ namespace ExercicioFx.Services
                 double updateQuota = basicQuota + _onlinePaymentService.interest(i,basicQuota);
                 //somando agora com os juros do paypal
                 double totalQuota = updateQuota + _onlinePaymentService.paymentFree(updateQuota);
+                //add a list de Installment
+                contract.AddInstallment(new Installment(addMonth, totalQuota));
             }
         }
     }
